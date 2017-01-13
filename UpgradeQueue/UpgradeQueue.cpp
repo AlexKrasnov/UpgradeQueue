@@ -1,4 +1,4 @@
-#include "UpgradeStack.cpp"
+п»ї#include "UpgradeStack.cpp"
 
 template <class T>
 class UpgradeQueue
@@ -16,7 +16,7 @@ public:
             st2.push(st1.pop());
         }
 		T tmp = st2.pop();
-        //добавляем элементы обратно
+        //РґРѕР±Р°РІР»СЏРµРј СЌР»РµРјРµРЅС‚С‹ РѕР±СЂР°С‚РЅРѕ
         while(!st2.IsEmpty())
         {
             st1.push(st2.pop());
@@ -33,7 +33,7 @@ public:
         {
             st1.push(st2.pop());
         }
-        //вывод элементов
+        //РІС‹РІРѕРґ СЌР»РµРјРµРЅС‚РѕРІ
         while(!st1.IsEmpty())
         {
             cout <<st1.look()<<' ';

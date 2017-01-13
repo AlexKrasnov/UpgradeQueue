@@ -1,27 +1,27 @@
-#include "UpgradeQueue.cpp"
+ï»¿#include "UpgradeQueue.cpp"
 
 void main()
 {
 	try
 	{
 		setlocale (LC_ALL, "Rus");
-		cout << "\t***Äåìîíñòðàöèÿ ðàáîòû ñòåêà è î÷åðåäè ñ ïîääåðæêîé ìèíèìóìà***\n\n";
+		cout << "\t***Ð”ÐµÐ¼Ð¾Ð½ÑÑ‚Ñ€Ð°Ñ†Ð¸Ñ Ñ€Ð°Ð±Ð¾Ñ‚Ñ‹ ÑÑ‚ÐµÐºÐ° Ð¸ Ð¾Ñ‡ÐµÑ€ÐµÐ´Ð¸ Ñ Ð¿Ð¾Ð´Ð´ÐµÑ€Ð¶ÐºÐ¾Ð¹ Ð¼Ð¸Ð½Ð¸Ð¼ÑƒÐ¼Ð°***\n\n";
 
 		UpgradeStack<int> s;
 		for (int i=0;i<5;i++)
 			s.push(int(pow(-1,i))*i);
-		cout << "Ñòåê: ";
+		cout << "Ð¡Ñ‚ÐµÐº: ";
 		s.print();
-		cout << "Min ýëåìåíò â ñòåêå: " << s.FindMin() << endl;
+		cout << "Min ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚ Ð² ÑÑ‚ÐµÐºÐµ: " << s.FindMin() << endl;
 
 		cout << endl;
 
 		UpgradeQueue<int> q;
 		for (int i=0;i<5;i++)
 			q.push(int(pow(-1,i))*i);
-		cout << "Î÷åðåäü: ";
+		cout << "ÐžÑ‡ÐµÑ€ÐµÐ´ÑŒ: ";
 		q.print();
-		cout << "Min ýëåìåíò â î÷åðåäè: " << q.FindMin() << endl;
+		cout << "Min ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚ Ð² Ð¾Ñ‡ÐµÑ€ÐµÐ´Ð¸: " << q.FindMin() << endl;
 	}
 	catch (const char* error)
 	{
